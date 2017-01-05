@@ -18,16 +18,8 @@ Route::group(['middleware' => ['web']], function () {
     ]);
 
     Route::get('/dashboard', [
-        'uses' => 'UserController@getDashboard',
+        'uses' => 'PostController@getDashboard',
         'as' => 'dashboard',
         'middleware' => 'auth'
     ]);
 });
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
