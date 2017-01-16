@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Welcome!
+    Welcome to Social Media!
 @endsection
 
 @section('content')
